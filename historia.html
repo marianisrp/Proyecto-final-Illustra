@@ -39,19 +39,239 @@
         </button>
     </header>
 
-    <main>
-
-        <!--Recorrido histórico hecho con ayuda de Claude-->
-
-        <div class="Timeline">
-            <aside class="Timeline-sic">
-
-                
-
+    <main class="History-page">
+        <div class="Timeline-shell">
+            <aside class="Timeline-nav" aria-label="Línea del tiempo">
+                <div class="Timeline-rail"></div>
+                <ul class="Timeline-list">
+                    <li class="Timeline-item is-active" data-target="era-1850">
+                        <span class="Timeline-point"></span>
+                        <span class="Timeline-year">1850</span>
+                    </li>
+                    <li class="Timeline-item" data-target="era-1900">
+                        <span class="Timeline-point"></span>
+                        <span class="Timeline-year">1900</span>
+                    </li>
+                    <li class="Timeline-item" data-target="era-1950">
+                        <span class="Timeline-point"></span>
+                        <span class="Timeline-year">1950</span>
+                    </li>
+                    <li class="Timeline-item" data-target="era-2000">
+                        <span class="Timeline-point"></span>
+                        <span class="Timeline-year">2000</span>
+                    </li>
+                    <li class="Timeline-item" data-target="era-actualidad">
+                        <span class="Timeline-point"></span>
+                        <span class="Timeline-year">Actualidad</span>
+                    </li>
+                </ul>
             </aside>
-        </div>
 
+            <div class="Timeline-content">
+                <section class="Era is-active" id="era-1850" data-year="1850">
+                    <div class="Era-visual">
+                        <div class="Era-illustration illustration-1850">
+                            <span class="Era-label">Pioneras del XIX</span>
+                        </div>
+                        <div class="Era-counter">1850</div>
+                    </div>
+
+                    <div class="Era-body">
+                        <p class="Era-p">Las pioneras</p>
+                        <h2>Las primeras ilustradoras</h2>
+                        <div class="Era-copy">
+                            <span class="Reveal-line" style="--delay: 1">Durante el siglo XIX, las mujeres comenzaron a
+                                ocupar espacios en la ilustración.</span>
+                            <span class="Reveal-line" style="--delay: 2">Sus dibujos acompañaron libros, revistas y
+                                cuentos infantiles con una sensibilidad nueva.</span>
+                            <span class="Reveal-line" style="--delay: 3">Aun así, muchas obras quedaron en segundo plano
+                                frente a los nombres masculinos del canon.</span>
+                        </div>
+
+                        <div class="Era-people">
+                            <article class="Artist-card">
+                                <h3>Beatrix Potter</h3>
+                                <p>Una voz delicada que convirtió la naturaleza en una escena íntima y memorable.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">The Tale of Peter Rabbit</span>
+                                    <span class="Artist-cardQuote">“La imaginación puede abrir puertas
+                                        invisibles.”</span>
+                                </div>
+                            </article>
+                            <article class="Artist-card">
+                                <h3>Jessie Willcox Smith</h3>
+                                <p>Sus ilustraciones dieron calidez y profundidad a los relatos para niñas y niños.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">A Child’s Book of Stories</span>
+                                    <span class="Artist-cardQuote">“Cada imagen puede invitar a soñar.”</span>
+                                </div>
+                            </article>
+                            <article class="Artist-card">
+                                <h3>Kate Greenaway</h3>
+                                <p>Su estilo poético y romántico ayudó a construir una imagen propia del mundo infantil.
+                                </p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">The April Baby’s Book</span>
+                                    <span class="Artist-cardQuote">“La belleza también es una forma de memoria.”</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Era" id="era-1900" data-year="1900">
+                    <div class="Era-visual">
+                        <div class="Era-illustration illustration-1900">
+                            <span class="Era-label">Modernidad y prensa</span>
+                        </div>
+                        <div class="Era-counter">1900</div>
+                    </div>
+
+                    <div class="Era-body">
+                        <p class="Era-kicker">La expansión</p>
+                        <h2>La ilustración entra en la modernidad</h2>
+                        <div class="Era-copy">
+                            <span class="Reveal-line" style="--delay: 1">En el cambio de siglo, el oficio se volvió más
+                                visible en revistas, libros y campañas.</span>
+                            <span class="Reveal-line" style="--delay: 2">Las ilustradoras encontraron nuevas formas de
+                                narrar desde la prensa y el diseño editorial.</span>
+                            <span class="Reveal-line" style="--delay: 3">Su trabajo empezó a reconocerse como una
+                                herramienta cultural y social.</span>
+                        </div>
+
+                        <div class="Era-people">
+                            <article class="Artist-card">
+                                <h3>María Elena Moyano</h3>
+                                <p>Su lenguaje gráfico mezcló sensibilidad social y fuerza visual en la edición
+                                    contemporánea.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">Portadas y relatos</span>
+                                    <span class="Artist-cardQuote">“Una imagen puede sostener una verdad.”</span>
+                                </div>
+                            </article>
+                            <article class="Artist-card">
+                                <h3>Ana Jarén</h3>
+                                <p>Su mirada trae una mezcla de memoria, color y narrativa íntima.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">Series de libro y editorial</span>
+                                    <span class="Artist-cardQuote">“La imagen también cuenta desde lo íntimo.”</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Era" id="era-1950" data-year="1950">
+                    <div class="Era-visual">
+                        <div class="Era-illustration illustration-1950">
+                            <span class="Era-label">Color y narrativa</span>
+                        </div>
+                        <div class="Era-counter">1950</div>
+                    </div>
+
+                    <div class="Era-body">
+                        <p class="Era-kicker">La renovación</p>
+                        <h2>La ilustración se vuelve lenguaje propio</h2>
+                        <div class="Era-copy">
+                            <span class="Reveal-line" style="--delay: 1">Durante mediados del siglo XX, la ilustración
+                                consolidó su propia identidad visual.</span>
+                            <span class="Reveal-line" style="--delay: 2">El color, la composición y la experimentación
+                                permitieron nuevas lecturas del mundo.</span>
+                            <span class="Reveal-line" style="--delay: 3">Las artistas comenzaron a ocupar un lugar más
+                                visible en el imaginario colectivo.</span>
+                        </div>
+
+                        <div class="Era-people">
+                            <article class="Artist-card">
+                                <h3>La Mumina</h3>
+                                <p>Su trabajo combina la fuerza del gesto con una atmósfera casi onírica.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">Ilustraciones editoriales</span>
+                                    <span class="Artist-cardQuote">“Lo visual puede sostener lo emocional.”</span>
+                                </div>
+                            </article>
+                            <article class="Artist-card">
+                                <h3>Esther Gili</h3>
+                                <p>Su poética visual construye mundos complejos desde la simplicidad de la línea.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">Obras de ficción</span>
+                                    <span class="Artist-cardQuote">“Cada trazo deja una huella.”</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Era" id="era-2000" data-year="2000">
+                    <div class="Era-visual">
+                        <div class="Era-illustration illustration-2000">
+                            <span class="Era-label">Digital y comunidad</span>
+                        </div>
+                        <div class="Era-counter">2000</div>
+                    </div>
+
+                    <div class="Era-body">
+                        <p class="Era-kicker">La conexión</p>
+                        <h2>El arte digital amplifica la voz de las artistas</h2>
+                        <div class="Era-copy">
+                            <span class="Reveal-line" style="--delay: 1">Con la llegada del siglo XXI, los medios
+                                digitales abrieron nuevas formas de exhibición.</span>
+                            <span class="Reveal-line" style="--delay: 2">Las ilustradoras comenzaron a compartir su
+                                trabajo de manera más directa con públicos globales.</span>
+                            <span class="Reveal-line" style="--delay: 3">La comunidad se volvió un espacio también de
+                                visibilidad y aprendizaje colectivo.</span>
+                        </div>
+
+                        <div class="Era-people">
+                            <article class="Artist-card">
+                                <h3>María Hesse</h3>
+                                <p>Su universo visual se mueve entre lo íntimo, lo urbano y lo simbólico.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">Obras contemporáneas</span>
+                                    <span class="Artist-cardQuote">“La imagen también puede ser territorio.”</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Era" id="era-actualidad" data-year="Actualidad">
+                    <div class="Era-visual">
+                        <div class="Era-illustration illustration-actualidad">
+                            <span class="Era-label">Presente y futuro</span>
+                        </div>
+                        <div class="Era-counter">Actualidad</div>
+                    </div>
+
+                    <div class="Era-body">
+                        <p class="Era-kicker">La actualidad</p>
+                        <h2>Las ilustradoras ocupan el presente</h2>
+                        <div class="Era-copy">
+                            <span class="Reveal-line" style="--delay: 1">Hoy las artistas no solo ilustran, también
+                                construyen narrativas, identidades y discursos.</span>
+                            <span class="Reveal-line" style="--delay: 2">La visibilidad crece, pero aún hay mucho por
+                                reivindicar en torno a su lugar histórico.</span>
+                            <span class="Reveal-line" style="--delay: 3">Ilustra propone mirar ese presente con una
+                                mirada más amplia y más justa.</span>
+                        </div>
+
+                        <div class="Era-people">
+                            <article class="Artist-card">
+                                <h3>Ilustradoras del presente</h3>
+                                <p>Una generación que une técnica, pensamiento crítico y nuevas formas de contar.</p>
+                                <div class="Artist-cardHover">
+                                    <span class="Artist-cardWork">Narrativas contemporáneas</span>
+                                    <span class="Artist-cardQuote">“El futuro se dibuja desde la memoria.”</span>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </main>
+
+    <script src="js/history.js"></script>
 
 
 
