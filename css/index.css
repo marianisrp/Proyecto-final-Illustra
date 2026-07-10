@@ -1,0 +1,441 @@
+:root{
+       scroll-behavior: smooth;
+        font-size:100%;
+}
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    display: block;
+    color:inherit;
+    text-decoration: none;
+}
+p a{
+    display: inline;
+}
+h1 , h2 , h3 , h4 , h5 , h6 , strong , em , mark, pre, code{
+    font:inherit;
+}
+mark{
+    background-color:transparent;
+}
+picture , img, video , iframe {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: initial;
+}
+svg{
+    display: block;
+    width: initial;
+    height: initial;
+    fill: currentColor;
+}
+
+
+form , input , select , option , textarea , label , fieldset , legend , button{
+    display: block;
+    font:inherit;
+    background-color: initial;
+}
+fieldset {
+    border : none ;
+}
+button , label{
+    cursor: pointer;
+}
+
+
+/*Propiedades de la cabecera*/
+
+.Header{
+    width: 100%;
+    min-height: 100px;
+    /* background-color: red; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.Header-a{
+    /* background-color: green; */
+
+    margin: 20px;
+
+
+}
+.Header-nav{
+    /* background-color: orange; */
+
+    
+
+}
+.Nav-ul{
+    /* background-color: coral ; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+}
+.Nav-li{
+
+}
+.Header-button{
+    /* background-color: lime; */
+
+    margin: 20px;
+}
+
+
+/*Propiedades del Landing*/
+
+.Landing{
+    width: 100%;
+    min-height: 80vh;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* display: none; */
+
+
+    
+
+}
+.Landing-h2{
+    width: 70%;
+    min-height: 100px;
+    background-color: orange;
+
+}
+.Landing-p{
+    width: 60%;
+
+
+    align-items: center;
+    
+
+}
+
+
+/*Propiedades del Grid*/
+
+.Grid{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+
+    margin: auto;
+
+    /* display: none; */
+
+}
+.Grid-h2{
+
+    padding: 10px;
+
+}
+.Grid-p{
+
+    margin: 10px 20px; 
+
+}
+.Grid-wrapper{
+    width: 90%;
+    max-width: 1600px;
+    min-height: 90vh;
+    /* background-color: lightblue; */
+
+
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.Grid-item{
+    background-color: lightgray;
+    
+    border-radius: 10px;
+
+
+}
+
+.Grid-item--span2{
+    background-color: lightcyan;
+    grid-column: span 2;
+    
+    border-radius: 10px;
+
+}
+
+.Grid-item--span4{
+    background-color: rgb(56, 109, 109);
+    grid-column: span 2;
+    grid-row: span 2;
+    
+    border-radius: 10px;
+
+}
+
+
+
+@media (max-width:1024px){
+    .Grid-wrapper{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width: 480px){
+    .Grid-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .Grid-item--span4{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    .Grid-item--span2{
+         grid-column: span 1;
+
+    }
+    
+ 
+}
+
+.Grid-button{
+    background-color: lightblue;
+    width: 90%;
+
+    margin: auto;
+
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid blue;
+
+
+}
+
+
+.History{
+    width: 100%;
+    min-height: 60vh;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* display: none; */
+
+    
+
+}
+.History-wrapper{
+    width: 90%;
+    max-width: 1200px;
+    min-height: 400px;
+
+    background-color: aqua;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+   
+}
+.History-img{
+    background-color: yellow;
+
+}
+.History-info{
+    background-color: green;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+    
+
+
+}
+.History-h2{
+    background-color: pink;
+
+}
+.History-p{
+    background-color: pink
+
+}
+.History-button{
+    background-color: indianred;
+    padding: 10px 20px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Artist{
+    width: 100%;
+    min-height: 60vh;
+    background-color: antiquewhite;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+
+    
+
+}
+.Artist-wrapper{
+    width: 90%;
+    max-width: 1200px;
+    min-height: 400px;
+
+    background-color: aqua;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+
+   
+}
+.Artist-img{
+    background-color: yellow;
+
+}
+.Artist-info{
+    background-color: green;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+    
+
+
+}
+.Artist-h2{
+    background-color: pink;
+
+}
+.Artist-p{
+    background-color: pink
+
+}
+.Artist-button{
+    background-color: indianred;
+    padding: 10px 20px;
+
+
+}
+
+
+
+.Footer{
+    width:100% ;
+    min-height: 200px;
+    background-color: palegoldenrod;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid brown;
+
+}
+
+.Footer-grid{
+    width: 90%;
+    background-color: aliceblue;
+
+
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+.Footer-h1{
+    background-color: yellow;
+
+}
+
+.Footer-p{
+    background-color: aqua;
+
+}
+.Footer-columns{
+    background-color: aquamarine;
+
+}
+
+.Footer-ul{
+    background-color: coral;
+
+}
+.Footer-li{
+    background-color: lightcoral;
+
+}
+
+@media (max-width: 768px){
+    .Footer-grid{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 480px){
+    .Footer-grid{
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+.Footer-copy{
+    background-color: wheat;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: start;
+    margin: 20px 0;
+}
