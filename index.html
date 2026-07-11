@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="css/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
 
-    
+
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 
     <header class="Header">
         <h1 class="Header-h1">
-            <a href="index.html" class="Header-a">Ilustradas</a>
+            <a href="index.html" class="Header-a">Trazos</a>
         </h1>
 
         <nav class="Header-nav">
@@ -60,6 +61,10 @@
             <p class="Landing-p">Bienvenida a un espacio dedicado a descubrir, celebrar y difundir el trabajo de
                 ilustradoras de diferentes estilos, generaciones y lugares del mundo.</p>
 
+            <button class="Landing-scroll-button" type="button" id="landingScroll">
+                <span class="Landing-scrollText">Descubre más</span>
+            </button>
+
         </section>
 
         <!--Grid de artistas-->
@@ -70,26 +75,30 @@
                 perspectivas visuales.
             </p>
             <div class="Grid-wrapper">
-                <div class="Grid-item--span4"><img src="" alt="imagen">
+                <div class="Grid-item Grid-item--destacada">
+                    <img class="Grid-item-img" alt="Ilustración de Ana Jarén">
                     <h3 class="Grid-h3">Ana Jarén</h3>
                 </div>
-                <div class="Grid-item--span2"><img src="" alt="imagen">
+                <div class="Grid-item Grid-item--span2">
+                    <img class="Grid-item-img" alt="Ilustración de María Hesse">
                     <h3 class="Grid-h3">María Hesse</h3>
                 </div>
-                <div class="Grid-item"><img src="" alt="imagen">
+                <div class="Grid-item">
+                    <img class="Grid-item-img" alt="Ilustración de La Mumina">
                     <h3 class="Grid-h3">La Mumina</h3>
                 </div>
-                <div class="Grid-item"><img src="" alt="imagen">
+                <div class="Grid-item">
+                    <img class="Grid-item-img" alt="Ilustración de Esther Gili">
                     <h3 class="Grid-h3">Esther Gili</h3>
                 </div>
 
-
-
-
+                <!--Dentro de cada grid tendra que haber una a que dirija a la ficha de la artista en la pagina de artistas-->
 
 
             </div>
-            <button class="Grid-button">Ve a la galería de artistas</button>
+            <button class="Grid-button">
+                <a href="artistas.html">Ve a la galería de artistas</a>
+            </button>
 
 
         </section>
@@ -102,16 +111,15 @@
 
                 <div class="History-info">
                     <h2 class="History-h2">Una historia poco contada</h2>
-                    <p class="History-p">Las ilustradoras han estado presentes desde los inicios de la edición moderna,
-                        la prensa ilustrada y la literatura infantil. </p>
-                    <p class="History-p">Sus trabajos han acompañado generaciones enteras, aunque sus nombres no siempre
-                        ocuparon el mismo lugar que sus obras.</p>
-                    <button class="History-button">
-                        Explora
-                    </button>
+                    <p class="History-p">La ilustración tiene una historia larga, pero sus autoras no siempre
+                        aparecieron en los créditos con el mismo peso que sus obras. </p>
+                    <p class="History-p">Recorre cinco momentos clave, de 1850 a hoy, y descubre quiénes construyeron
+                        esa mirada, década a década.</p>
+                    <a class="History-button" href="historia.html">Recorre cinco momentos clave, de 1850 a hoy, y
+                        descubre quiénes construyeron esa mirada, década a década</a>
 
                 </div>
-                <img src="" alt="History-imagen" class="History-img">
+                <img src="" alt="Ilustración representativa de la historia de la ilustración" class="History-img">
             </div>
 
         </section>
@@ -130,42 +138,65 @@
 
 
             <div class="Footer-columns">
-                <h1 class="Footer-h1">
-                    <a href="">Footer-logo Ilustra</a>
-                </h1>
+                <a class="Footer-brand" href="index.html">Trazos</a>
                 <p class="Footer-p">Visibilizando a las artistas detrás de nuestro imaginario visual.</p>
             </div>
-            <ul class="Footer-ul">Platform
-                <li class="Footer-li">Galería</li>
-                <li class="Footer-li">Artistas</li>
-                <li class="Footer-li">Historia</li>
-                <li class="Footer-li">Sobre nosotras</li>
-                <li class="Footer-li">Blog</li>
-            </ul>
-            <ul class="Footer-ul">Legal
-                <li class="Footer-li">Terminos de uso</li>
-                <li class="Footer-li">Política de privacidad</li>
-                <li class="Footer-li">Contactanos</li>
-            </ul>
-            <ul class="Footer-ul">Redes
-                <li class="Footer-li">Únete a la comunidad</li>
-                <li class="Footer-li">Instagram</li>
-                <li class="Footer-li">Facebook</li>
-            </ul>
 
+            <div class="Footer-column">
+                <h4 class="Footer-h4">Plataforma</h4>
+                <ul class="Footer-ul">
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="index.html">Galería</a></li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="artistas.html">Artistas</a>
+                    </li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="historia.html">Historia</a>
+                    </li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="">Blog</a>
+                    </li>
+                </ul>
 
-        </div>
+            </div>
+
+            <div class="Footer-column">
+                <h4 class="Footer-h4">Legal</h4>
+                <ul class="Footer-ul">
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="index.html">Terminos de uso</a></li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="artistas.html">Política de privacidad</a>
+                    </li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="historia.html">Contactanos</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="Footer-column">
+                <h4 class="Footer-h4">Redes</h4>
+                <ul class="Footer-ul">
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="index.html">Únete a la comunidad</a></li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            
 
         <div class="Footer-copy">
-            <div class="Footer-copy-logo">
-                <a href="" class="Footer-logo">Logo</a>
-            </div>
             <p class="Footer-copy-p">© 2026 Ilustra. Visibilizando a las artistas detrás de nuestro imaginario visual.
             </p>
         </div>
-        <div class="Footer-item">
-
-
+   
 
 
     </footer>
