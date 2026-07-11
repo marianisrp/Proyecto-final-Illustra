@@ -727,11 +727,96 @@ body {
     min-height: 160px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .Artist-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 30px rgba(31, 34, 48, 0.12);
+}
+
+.Artist-card:focus-visible {
+    outline: 3px solid #c56f4d;
+    outline-offset: 3px;
+}
+
+.Lightbox {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    z-index: 1000;
+}
+
+.Lightbox.is-open {
+    display: flex;
+}
+
+.Lightbox-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(31, 34, 48, 0.72);
+}
+
+.Lightbox-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(92vw, 760px);
+    display: grid;
+    grid-template-columns: minmax(240px, 0.9fr) minmax(0, 1fr);
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 24px 60px rgba(31, 34, 48, 0.24);
+}
+
+.Lightbox-image {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    background: #e8dccd;
+}
+
+.Lightbox-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+}
+
+.Lightbox-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8d4f2b;
+}
+
+.Lightbox-title {
+    font-size: 1.5rem;
+    color: #1f2230;
+}
+
+.Lightbox-description {
+    color: #5b574f;
+    line-height: 1.7;
+}
+
+.Lightbox-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1f2230;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .Artist-card h3 {
@@ -816,5 +901,13 @@ body {
 
     .Era-people {
         grid-template-columns: 1fr;
+    }
+
+    .Lightbox-dialog {
+        grid-template-columns: 1fr;
+    }
+
+    .Lightbox-image {
+        min-height: 220px;
     }
 }
