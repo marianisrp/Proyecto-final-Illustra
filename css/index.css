@@ -1,6 +1,29 @@
 :root {
     scroll-behavior: smooth;
     font-size: 100%;
+    font-family: system-ui, sans-serif;
+
+    /*Fondo*/
+    --c-bg-primary: #1b1d25;
+    --c-bg-secondary: #1E2027;/*Tarjetas, sidebar, superficies elevadas*/
+
+    /*Texto*/
+    --c-f-primary: #EDE9E1; /*Títulos (h1, h2, h3)*/
+    --c-f-secondary: #A9A499; /*Párrafos, texto de cuerpo, metadatos*/
+    
+    /* Bordes */
+    --c-border: #3A3A38; /*Bordes, líneas divisorias, la línea de la timeline*/
+
+    /* Acentos */
+    --c-accent-primary: #C9A227; /*Enlaces, hover principal, elementos destacados*/
+    --c-accent-secondary: #3A7D64; /*Estados activos (punto iluminado), botones secundarios*/
+    --c-accent-tertiary: #C1485B; /*Alertas suaves, hover de tarjetas, detalles puntuales*/
+
+
+
+
+
+
 }
 
 * {
@@ -24,17 +47,7 @@ p a {
     display: inline;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-em,
-mark,
-pre,
-code {
+h1, h2, h3, h4, h5, h6, strong, em, mark, pre, code {
     font: inherit;
 }
 
@@ -60,15 +73,7 @@ svg {
 }
 
 
-form,
-input,
-select,
-option,
-textarea,
-label,
-fieldset,
-legend,
-button {
+form, input, select, option, textarea, label, fieldset, legend, button {
     display: block;
     font: inherit;
     background-color: initial;
@@ -78,10 +83,29 @@ fieldset {
     border: none;
 }
 
-button,
-label {
+button, label {
     cursor: pointer;
 }
+
+body{
+   font-family: "EB Garamond", serif;
+   background: var(--c-bg-primary);
+   color: var(--c-f-secondary);
+   font-size: clamp(2rem, 3vw, 4rem);
+     
+}
+
+h1, h2, h3 {
+    color: var(--c-f-primary);
+}
+
+p{
+    color: var(--c-f-secondary);
+    line-height: 1.1; 
+    
+}
+   
+  
 
 
 /*Propiedades de la cabecera*/
@@ -89,7 +113,7 @@ label {
 .Header {
     width: 100%;
     min-height: 100px;
-    /* background-color: red; */
+    
 
     display: flex;
     flex-flow: row nowrap;
@@ -101,6 +125,7 @@ label {
 
 .Header-h1 {
     margin: 20px;
+    
 }
 
 .Header-a {
@@ -143,14 +168,16 @@ label {
 .Landing {
     width: 100%;
     min-height: 80vh;
-    background-color: lightgreen;
+    
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
-    /* display: none; */
+
+
+
 
 
 
@@ -180,7 +207,7 @@ label {
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    background-color: whitesmoke;
+    
 
     margin: auto;
 
@@ -427,7 +454,6 @@ label {
 .Footer {
     width: 100%;
     min-height: 200px;
-    background-color: palegoldenrod;
 
     display: flex;
     flex-flow: column nowrap;
@@ -440,7 +466,7 @@ label {
 
 .Footer-grid {
     width: 90%;
-    background-color: aliceblue;
+    
 
 
     display: grid;
@@ -490,7 +516,7 @@ label {
 }
 
 .Footer-copy {
-    background-color: wheat;
+    
 
     display: flex;
     flex-flow: row nowrap;
@@ -501,10 +527,7 @@ label {
 
 /* Timeline histórica */
 
-body {
-    background: #f7f2ea;
-    color: #1f2230;
-}
+
 
 .History-page {
     padding: 40px 24px 80px;
