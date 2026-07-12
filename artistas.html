@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
 
-      <!--Cabecera de navegación de la página-->
+    <!--Cabecera de navegación de la página-->
 
 
     <header class="Header">
         <h1 class="Header-h1">
-            <a href="index.html" class="Header-a">Trazos</a>
+            <a href="index.html" class="Header-a">Ilustradas</a>
         </h1>
 
         <nav class="Header-nav">
@@ -40,34 +42,114 @@
 
     <main>
 
-         <!--Seccion de la ilustradora, donde se incluye su foto junto con breve información biográfica y estilo-->
+        <!-- Carrusel superior con ilustraciones-->
 
-        <section class="Artist">
-            <div class="Artist-wrapper">
-                <img src="" alt="Artist-imagen" class="Artist-img">
-                <div class="Artist-info">
-                    <h2 class="Artist-h2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                    <p class="Artist-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    <button class="Artist-button">
-                        Explora
-                    </button>
-
+        <section class="Carroussel">
+            <div class="Carroussel-wrapper">
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
                 </div>
             </div>
 
+            <button class="Carroussel-arrow Carroussel-arrow--prev"> << </button>
+                    <button class="Carroussel-arrow Carroussel-arrow--next"> >> </button>
+
+                    <ul class="Carroussel-ul">
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                    </ul>
+
+
         </section>
 
+        <!--Directorio de artistas con sidebar-->
+
+        <section class="Artist-directory">
+            <aside class="Artist-list">
+                <ul class="Artist-list-ul">
+                    <li class="Artist-li">
+                        <button type="button" class="Artist-list-button is-active">Ana Jarén</button>
+                    </li>
+                    <li class="Artist-li">
+                        <button type="button" class="Artist-list-button">María Hesse</button>
+                    </li>
+                    <li class="Artist-li">
+                        <button type="button" class="Artist-list-button">La Mumina</button>
+                    </li>
+                    <li class="Artist-li">
+                        <button type="button" class="Artist-list-button">Esther Gili</button>
+                    </li>
+                    <li class="Artist-li">
+                        <button type="button" class="Artist-list-button">Flavita
+                            Banana</button>
+                    </li>
+                    <li class="Artist-li">
+                        <button type="button" class="Artist-list-button">Agustina Guerrero
+                            (Tinta Fresca)</button>
+                    </li>
+                </ul>
+            </aside>
+
+            <article class="Artist-detail">
+                <img class="Artist-detail-img" src="" alt="Retrato de Ana Jarén">
+
+                <div class="Artist-detail-bio">
+                    <h2 class="Artist-detail-name">Ana Jarén</h2>
+                    <p class="Artist-detail-p">Ilustradora española de trazo colorido y directo, con proyectos que van de la ilustración editorial al muralismo. Su obra suele abordar temas de identidad y mirada feminista con un estilo visual muy reconocible.</p>
+
+                    <a href="" class="Artist-detail-a" target="_blank" rel="noopener noreferrer"></a>
+
+                    <h3 class="Artist-detail-worksTitle">Descubre su obra</h3>
+                    <div class="Artist-detail-works">
+                        <img src="" alt="img" class="Artist-detail-work">
+                        <img src="" alt="img" class="Artist-detail-work">
+                        <img src="" alt="img" class="Artist-detail-work">
+                    </div>
+                </div>
+            </article>
+        </section>
 
 
 
     </main>
 
- <footer class="Footer">
+    <footer class="Footer">
         <div class="Footer-grid">
 
 
             <div class="Footer-columns">
-                <a class="Footer-brand" href="index.html">Trazos</a>
+                <a class="Footer-brand" href="index.html">Ilustradas</a>
                 <p class="Footer-p">Visibilizando a las artistas detrás de nuestro imaginario visual.</p>
             </div>
 
@@ -75,7 +157,8 @@
                 <h4 class="Footer-h4">Plataforma</h4>
                 <ul class="Footer-ul">
                     <li class="Footer-li">
-                        <a class="Footer-a" href="index.html">Galería</a></li>
+                        <a class="Footer-a" href="index.html">Galería</a>
+                    </li>
                     <li class="Footer-li">
                         <a class="Footer-a" href="artistas.html">Artistas</a>
                     </li>
@@ -93,7 +176,8 @@
                 <h4 class="Footer-h4">Legal</h4>
                 <ul class="Footer-ul">
                     <li class="Footer-li">
-                        <a class="Footer-a" href="index.html">Terminos de uso</a></li>
+                        <a class="Footer-a" href="index.html">Terminos de uso</a>
+                    </li>
                     <li class="Footer-li">
                         <a class="Footer-a" href="artistas.html">Política de privacidad</a>
                     </li>
@@ -108,28 +192,32 @@
                 <h4 class="Footer-h4">Redes</h4>
                 <ul class="Footer-ul">
                     <li class="Footer-li">
-                        <a class="Footer-a" href="index.html">Únete a la comunidad</a></li>
-                    <li class="Footer-li">
-                        <a class="Footer-a" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a class="Footer-a" href="index.html">Únete a la comunidad</a>
                     </li>
                     <li class="Footer-li">
-                        <a class="Footer-a" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                        <a class="Footer-a" href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="Footer-li">
+                        <a class="Footer-a" href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer">Facebook</a>
                     </li>
                 </ul>
 
             </div>
 
-            
 
-        <div class="Footer-copy">
-            <p class="Footer-copy-p">© 2026 Ilustra. Visibilizando a las artistas detrás de nuestro imaginario visual.
-            </p>
-        </div>
-   
+
+            <div class="Footer-copy">
+                <p class="Footer-copy-p">© 2026 Ilustradas.
+                </p>
+            </div>
+
 
 
     </footer>
 
-    
+
 </body>
+
 </html>

@@ -352,12 +352,14 @@ p {
     overflow: hidden;    
     cursor: pointer;
     
-    /* transition: all 0.3 ease, boxshadow 0.3s ease ; */
+    transition: all 0.3 ease, boxshadow 0.3s ease ;
+
 }
 
 .Grid-item:hover{
     transform: rotate(-1.5deg);
-    /* box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4); */
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+
 
 }
 
@@ -369,8 +371,9 @@ p {
 
     object-fit: cover;
     z-index: 0;
-
 }
+
+
 
 .Grid-item::after{
     content: "";
@@ -508,8 +511,8 @@ p {
 
 .History-img {
     width: 100%;
-    min-height: 320px;
-    object-fit: cover;
+    /* min-height: 320px; */
+    /* object-fit: cover; */
     border-radius: var(--border-radius);
     background-color: var(--c-accent-secondary);
 }
@@ -639,68 +642,254 @@ p {
 
 /*CSS de la sección Artistas FALTA MAQUETAR*/
 
-.Artist {
+.Carroussel{
+    width: 70%;
+    background-color: var(--c-bg-secondary);
+    /* max-width: 1200px; */
+    margin: 0 auto 60px;
+    padding: 190px 0 80px;
+
+    position: relative;
+    /* overflow: hidden; */
+
+  
+
+}
+.Carroussel-wrapper{
+    width: 200%;
+    /* min-height: 200px; */
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2px;
+
+    transition: translate .4s ease;
+
+}
+.Carroussel-item{
+    background-color: #8d555d;
+
+}
+.Carroussel-img{
+    background-color: var(--c-accent-secondary);
+
+}
+.Carroussel-arrow{
+    padding: 8px 10px;
+
+    background-color: var(--c-bg-secondary);
+    color: var(--c-accent-primary);
+    border-radius: var(--border-radius);
+    opacity: 0.7;
+
+    position: absolute;
+    top: calc(50% - .5rem);
+}
+
+.Carroussel-arrow:hover{
+    opacity: 1;
+}
+
+.Carroussel-arrow--prev{
+  left: 0;
+}
+.Carroussel-arrow--next{
+  right: 1px;
+}
+
+.Carroussel-ul{
     width: 100%;
-    min-height: 60vh;
-    background-color: antiquewhite;
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+    gap: 1rem;
 
+    position: absolute;
+    bottom: 0;
 
+    background-color: #7a4b2e;
 
+}
+.Carroussel-li{
 
 }
 
-.Artist-wrapper {
-    width: 90%;
-    max-width: 1200px;
-    min-height: 400px;
+.Carroussel-dot{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--c-accent-secondary);
+    border-radius: var(--border-radius);
+}
 
-    background-color: aqua;
+.Artist-directory{
+    width: 90%;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 0 80px;
 
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-
-
+    grid-template-columns: 240px minmax(0, 1fr);
+    justify-content: start;
+    align-items: start;
+    gap: 40px;
 }
 
-.Artist-img {
-    background-color: yellow;
+.Artist-list{
+    position: sticky;
+    top: 25px;
 
 }
-
-.Artist-info {
-    background-color: green;
-
+.Artist-list-ul{
     display: flex;
     flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+    gap: 4px;
+    
+}
+.Artist-li{
+    
+}
+.Artist-list-button{
+    width: 100%;
+    color: var(--c-f-secondary);
+    font-size: 1rem;
+    text-align: left;
+    padding: 10px 14px;
+
+
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.Artist-list-button:hover{
+    background-color: var(--c-bg-secondary);
+    color: var(--c-f-primary);
+}
+
+.Artist-list-button.is-active{
+    background-color: var(--c-accent-primary);
+    color: var(--c-bg-primary);
+    font-weight: 550;
+}
+
+.Artist-list-button:focus-visible{
+    outline: 2px solid var(--c-accent-primary);
+    outline-offset: 2px;
+}
+
+/*Panel de detalle de las artistas*/
+
+.Artist-detail{
+    background-color: var(--c-bg-secondary);
+    border: 1px solid var(--c-border);
+    border-radius: var(--border-radius);
+    padding: 25px;
+
+    display: grid;
+    grid-template-columns: minmax(240px, 0.9fr) minmax(0 , 1fr);
+    gap: 32px;
+
+}
+
+.Artist-detail-img{
+    width: 100%;
+    /* min-height: 280px;
+    object-fit: cover; */
+    background-color: var(--c-accent-secondary);
+    border-radius: var(--border-radius);
+
+}
+.Artist-detail-bio{
+    display: flex;
+    flex-flow: column;
     justify-content: space-between;
     align-items: start;
+    gap: 10px;
+}
+.Artist-detail-name{
+    color: var(--c-f-primary);
 
+}
+.Artist-detail-p{
+    color: var(--c-f-secondary);
 
+}
+.Artist-detail-a{
+    color: var(--c-accent-primary);
+    width: fit-content;
+
+}
+.Artist-detail-link:hover{
+    color: var(--c-accent-tertiary);
+    outline-offset: 2px;
+}
+
+.Artist-detail-worksTitle{
+    color: var(--c-f-primary);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-top: 8px;
+
+}
+.Artist-detail-works{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+}
+.Artist-detail-work{
+    width: 100%;
+    /* height: 90px;
+    object-fit: cover; */
+    background-color: var(--c-bg-primary);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    transition: all 0.3s ease;
 
 }
 
-.Artist-h2 {
-    background-color: pink;
-
+.Artist-detail-work:hover{
+    transform: scale(1.5);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35) ;
 }
 
-.Artist-p {
-    background-color: pink
+/*Responsive sección Artistas*/
+
+@media (max-width: 900px){
+    .Artist-directory{
+        grid-template-columns: 1fr;
+
+    }
+
+    .Artist-list{
+        position: relative;
+        top: 0;
+    }
+    .Artist-list-ul{
+        flex-flow: row wrap;
+    }
+    .Artist-detail{
+        grid-template-columns: 1fr;
+    }
 }
 
-.Artist-button {
-    background-color: indianred;
-    padding: 10px 20px;
-
+@media (max-width:480px){
+    .Artist-detail-works{
+        grid-template-columns: 1fr;
+    }
 }
+
 
 /*Hasta aquí CSS de la sección Artistas*/
+
+
 /*CSS de la sección Historia FALTA MAQUETAR*/
 
 
@@ -825,7 +1014,6 @@ p {
     outline: 2px solid var(--c-accent-primary);
     outline-offset: 3px;
 }
-
 
 .Chronology-img{
     width: 100%;
@@ -962,95 +1150,3 @@ p {
     cursor: pointer;
 }
 
-.Artist-card h3 {
-    font-size: 1.05rem;
-    margin-bottom: 10px;
-}
-
-.Artist-card p {
-    color: #5b574f;
-    line-height: 1.5;
-}
-
-.Artist-cardHover {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    padding: 18px;
-    background: linear-gradient(135deg, rgba(197, 111, 77, 0.95), rgba(99, 70, 55, 0.95));
-    color: #fff;
-    opacity: 0;
-    transform: translateY(12px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.Artist-card:hover .Artist-cardHover {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.Artist-cardWork {
-    font-weight: 700;
-}
-
-.Artist-cardQuote {
-    font-style: italic;
-    font-size: 0.95rem;
-}
-
-@media (max-width: 900px) {
-    .Timeline-shell {
-        grid-template-columns: 1fr;
-    }
-
-    .Timeline-nav {
-        position: relative;
-        top: 0;
-        margin-bottom: 8px;
-    }
-
-    .Timeline-rail {
-        display: none;
-    }
-
-    .Timeline-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .Timeline-item {
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(255, 255, 255, 0.75);
-    }
-
-    .Era {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .History-page {
-        padding: 24px 16px 56px;
-    }
-
-    .Era {
-        padding: 20px;
-    }
-
-    .Era-people {
-        grid-template-columns: 1fr;
-    }
-
-    .Lightbox-dialog {
-        grid-template-columns: 1fr;
-    }
-
-    .Lightbox-image {
-        min-height: 220px;
-    }
-}
