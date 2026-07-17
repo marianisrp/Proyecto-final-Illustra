@@ -20,8 +20,8 @@ console.log (artistWorks)
 
  const artistData = {
         'ana-jaren': {
-            img: `assets/optim/ana-jaren-retrato.webp`,
-            bio: `Ilustradora española de trazo colorido y directo, con proyectos que van de la ilustración editorial al muralismo. Su obra suele abordar temas de identidad y mirada feminista con un estilo visual muy reconocible.`,
+            img: `assets/optim/ana-jaren.webp`,
+            bio: `Ana Jarén (Sevilla, 1985) inició su carrera profesional como ilustradora en el sector de la comunicación de moda. En su obra, Ana captura el día a día, las personas y los espacios que habitan, parando con gusto en los pequeños detalles, con una mirada onírica. Ha trabajado para numerosas marcas y medios de comunicación internacionales como The Washington Post, El Mundo, Fnac o Vogue, entre muchosotros. Es la autora de Escritoras (Lumen, 2023), Girls Who Green the World (2022), Astrología para colorear (P&J, 2022) o Almudena (Lumen, 2024), uno de los mejores libros de 2024 según Vogue. `,
             link: `https://anajaren.com/`,
             works: [`assets/optim/ana-jaren-work1.webp`, `assets/optim/ana-jaren-work2.webp`, `assets/optim/ana-jaren-work3.webp`]
         },

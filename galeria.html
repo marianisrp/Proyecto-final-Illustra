@@ -7,7 +7,9 @@
     <title>Ilustradas</title>
 
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js" defer></script>
+    <script src="js/galeria.js" defer></script>
+    <script src="js/header.js" defer></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,7 +29,11 @@
             <a href="index.html" class="Header-a">Ilustradas</a>
         </h1>
 
-        <nav class="Header-nav">
+        <button type="button" class="Header-toggle" id="headerToggle" aria-expanded="false" aria-controls="headerNav">
+            Menú
+        </button>
+
+        <nav class="Header-nav" id="headerNav">
             <ul class="Nav-ul">
                 <li class="Nav-li">
                     <a href="galeria.html" class="Nav-a">Galería</a>
@@ -38,15 +44,10 @@
                 <li class="Nav-li">
                     <a href="historia.html" class="Nav-a">Historia</a>
                 </li>
-                <li class="Nav-li">
-                    <a href="" class="Nav-a">Blog</a>
-                </li>
             </ul>
-        </nav>
 
-        <button class="Header-button">
-            <a href="" class="Button-a">Únete a la comunidad</a>
-        </button>
+
+        </nav>
     </header>
 
     <main>
@@ -104,7 +105,7 @@
         </section>
 
     </main>
-    
+
     <footer class="Footer">
         <div class="Footer-grid">
 
