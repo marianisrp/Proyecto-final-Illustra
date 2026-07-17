@@ -30,8 +30,6 @@ const artistData = {
         bio: `María Hesse (1982) es una ilustradora española reconocida por su estilo poético y su universo visual lleno de sensibilidad. Ha colaborado con editoriales, revistas y marcas de prestigio, además de publicar obras como Frida Kahlo. Una biografía y una edición ilustrada de Orgullo y prejuicio. En 2020 fue seleccionada por Taschen entre las 100 mejores ilustradoras del mundo, consolidándose como una de las voces más destacadas de la ilustración contemporánea. `,
         link: `https://www.mariahesse.es/`,
         works: []
-
-
     },
     'la-mumina': {
         img: `assets/optim/LaMumina.webp`,
