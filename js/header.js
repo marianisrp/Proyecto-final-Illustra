@@ -10,6 +10,7 @@ headerToggle.addEventListener(`click`, () => {
     let abierto = headerToggle.classList.toggle(`is-active`)
     headerNav.classList.toggle(`is-open`)
     headerToggle.setAttribute(`aria-expanded`, abierto)
+    headerToggle.textContent = abierto ? `Cerrar` : `Menú`
 })
 
 // Cierra el menú al hacer click en un link o en el botón
@@ -18,5 +19,6 @@ headerNav.querySelectorAll(`.Nav-a, .Button-a`).forEach((link) => {
         headerToggle.classList.remove(`is-active`)
         headerNav.classList.remove(`is-open`)
         headerToggle.setAttribute(`aria-expanded`, false)
+        
     })
 })

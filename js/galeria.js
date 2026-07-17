@@ -81,15 +81,5 @@ window.addEventListener(`keydown`, (e)=>{
     }
 })
 
-window.addEventListener(`mousewheel` , (e)=>{
 
-    // console.log (e)
-
-    if( e.deltaY > 0){
-        nextHandler()
-    }
-    if (e.deltaY < 0){
-        prevHandler()
-    }
-})
 
