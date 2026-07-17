@@ -707,7 +707,7 @@ p {
 
 .Carroussel{
     width: 80%;
-    background-color: var(--c-bg-secondary);
+    background-color: var(--c-bg-primary);
     margin: 0px auto 60px;
     padding: 180px 0 80px;
 
@@ -954,7 +954,7 @@ p {
 
 
 .Chronology{
-    padding: 190px 24px 100px;
+    padding: 140px 24px 100px;
 }
 
 .Chronology-header{
