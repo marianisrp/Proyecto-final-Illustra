@@ -23,13 +23,15 @@ console.log (artistWorks)
             img: `assets/optim/ana-jaren.webp`,
             bio: `Ana Jarén (Sevilla, 1985) inició su carrera profesional como ilustradora en el sector de la comunicación de moda. En su obra, Ana captura el día a día, las personas y los espacios que habitan, parando con gusto en los pequeños detalles, con una mirada onírica. Ha trabajado para numerosas marcas y medios de comunicación internacionales como The Washington Post, El Mundo, Fnac o Vogue, entre muchosotros. Es la autora de Escritoras (Lumen, 2023), Girls Who Green the World (2022), Astrología para colorear (P&J, 2022) o Almudena (Lumen, 2024), uno de los mejores libros de 2024 según Vogue. `,
             link: `https://anajaren.com/`,
-            works: [`assets/optim/ana-jaren-work1.webp`, `assets/optim/ana-jaren-work2.webp`, `assets/optim/ana-jaren-work3.webp`]
+            works: []
         },
-        'maria-hesse': {
+        'marian-hesse': {
             img: `assets/optim/maria-hesse-ret.webp`,
-            bio: `María Hesse (1982) es una ilustradora española reconocida por su estilo poético y su universo visual lleno de sensibilidad. Ha colaborado con editoriales, revistas y marcas de prestigio, además de publicar obras como Frida Kahlo. Una biografía y una edición ilustrada de Orgullo y prejuicio. En 2020 fue seleccionada por Taschen entre las 100 mejores ilustradoras del mundo, consolidándose como una de las voces más destacadas de la ilustración contemporánea.`,
+            bio: `María Hesse (1982) es una ilustradora española reconocida por su estilo poético y su universo visual lleno de sensibilidad. Ha colaborado con editoriales, revistas y marcas de prestigio, además de publicar obras como Frida Kahlo. Una biografía y una edición ilustrada de Orgullo y prejuicio. En 2020 fue seleccionada por Taschen entre las 100 mejores ilustradoras del mundo, consolidándose como una de las voces más destacadas de la ilustración contemporánea. `,
             link: `https://www.mariahesse.es/`,
             works: []
+
+    
         },
         'la-mumina': {
             img: `assets/optim/LaMumina.webp`,
