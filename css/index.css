@@ -371,7 +371,7 @@ p {
     overflow: hidden;    
     cursor: pointer;
     
-    transition: all 0.3 ease, boxshadow 0.3s ease ;
+    transition: all 0.3s ease; 
 
 }
 
@@ -381,6 +381,7 @@ p {
 
 
 }
+
 
 .Grid-item-img{
     width: 100%;
@@ -660,23 +661,22 @@ p {
 
 /*Hasta aqí CSS de la Landing page*/
 
-/*CSS de la sección Artistas FALTA MAQUETAR*/
+/*CSS de la sección Galería FALTA MAQUETAR*/
 
 .Carroussel{
-    width: 70%;
+    width: 80%;
+    height: 90vh;
     background-color: var(--c-bg-secondary);
     /* max-width: 1200px; */
     margin: 0 auto 60px;
-    padding: 190px 0 80px;
+    padding: 140px 0 80px;
 
     position: relative;
-    /* overflow: hidden; */
-
-  
-
+    overflow: hidden;
 }
+
 .Carroussel-wrapper{
-    width: 200%;
+    width: 600%;
     /* min-height: 200px; */
 
     display: grid;
@@ -684,8 +684,8 @@ p {
     gap: 2px;
 
     transition: translate .4s ease;
-
 }
+
 .Carroussel-item{
     background-color: #8d555d;
 
@@ -714,7 +714,8 @@ p {
   left: 0;
 }
 .Carroussel-arrow--next{
-  right: 1px;
+  right: 0;
+  
 }
 
 .Carroussel-ul{
@@ -743,11 +744,21 @@ p {
     border-radius: var(--border-radius);
 }
 
+.Carroussel-dot:hover{
+    background-color: var(--c-accent-primary);
+}
+
+.Carroussel-dot.is-active{
+    background-color: var(--c-accent-primary);
+}
+
+/*CSS de la sección Galería FALTA MAQUETAR*/
+
 .Artist-directory{
     width: 90%;
     max-width: 1600px;
     margin: auto;
-    padding: 0 0 80px;
+    padding: 140px 20px;
 
     display: grid;
     grid-template-columns: 240px minmax(0, 1fr);
@@ -842,10 +853,15 @@ p {
 .Artist-detail-a{
     color: var(--c-accent-primary);
     width: fit-content;
+    transition: all 0.3 ease ;
 
 }
-.Artist-detail-link:hover{
+.Artist-detail-a:hover{
     color: var(--c-accent-tertiary);
+    outline-offset: 2px;
+}
+.Artist-detail-a:focus-visible{
+    outline: 2px solid var(--c-accent-primary);
     outline-offset: 2px;
 }
 
@@ -876,7 +892,7 @@ p {
 }
 
 .Artist-detail-work:hover{
-    transform: scale(1.5);
+    transform: scale(1.05);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35) ;
 }
 
@@ -1001,7 +1017,7 @@ p {
 .Chronology-dot{
     width: 16px;
     height: 16px;
-    border: 50%;
+    border-radius: var(--border-radius);
     box-shadow: 0 0 0 6px var(--c-bg-primary);
 
     position: relative;
@@ -1091,7 +1107,7 @@ p {
 }
 
 
-.Lightbox {
+/* .Lightbox {
     position: fixed;
     inset: 0;
     display: none;
@@ -1169,4 +1185,4 @@ p {
     font-size: 1.2rem;
     cursor: pointer;
 }
-
+ */

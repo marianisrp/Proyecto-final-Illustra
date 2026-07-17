@@ -5,8 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ilustradas</title>
+
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/artistas.js" defer></script>
+    <script src="js/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -30,6 +38,9 @@
                 <li class="Nav-li">
                     <a href="historia.html" class="Nav-a">Historia</a>
                 </li>
+                <li class="Nav-li">
+                    <a href="" class="Nav-a">Blog</a>
+                </li>
             </ul>
         </nav>
 
@@ -39,64 +50,61 @@
     </header>
 
     <main>
+        <!-- Carrusel con ilustraciones-->
 
-
-        <!--Directorio de artistas con sidebar-->
-
-        <section class="Artist-directory">
-            <aside class="Artist-list">
-                <ul class="Artist-list-ul">
-                    <li class="Artist-li">
-                        <button type="button" class="Artist-list-button is-active" id="ana-jaren">Ana Jarén</button>
-                    </li>
-                    <li class="Artist-li">
-                        <button type="button" class="Artist-list-button" data-artist="maria-hesse">María Hesse</button>
-                    </li>
-                    <li class="Artist-li">
-                        <button type="button" class="Artist-list-button" data-artist="la-mumina">La Mumina</button>
-                    </li>
-                    <li class="Artist-li">
-                        <button type="button" class="Artist-list-button" data-artist="esther-gili">Esther Gili</button>
-                    </li>
-                    <li class="Artist-li">
-                        <button type="button" class="Artist-list-button" data-artist="flavita-banana">Flavita
-                            Banana</button>
-                    </li>
-                    <li class="Artist-li">
-                        <button type="button" class="Artist-list-button" data-artist="pedrita-parker">Pedrita Parker</button>
-                    </li>
-                </ul>
-            </aside>
-
-            <article class="Artist-detail">
-                <img class="Artist-detail-img" src="assets/optim/Ana_Jaren_by_Nacho_Acaso_2000.webp" alt="Retrato de Ana Jarén" id="artistImg">
-
-                <div class="Artist-detail-bio">
-                    <h2 class="Artist-detail-name" id="artistName">Ana Jarén</h2>
-                    <p class="Artist-detail-p" id="artistBio">Ilustradora española de trazo colorido y directo, con proyectos que van
-                        de la ilustración editorial al muralismo. Su obra suele abordar temas de identidad y mirada
-                        feminista con un estilo visual muy reconocible.</p>
-
-                    <a href="https://anajaren.com/" class="Artist-detail-a" id="artistLink" target="_blank"
-                        rel="noopener noreferrer">Visita su web</a>
-
-                    <h3 class="Artist-detail-worksTitle">Descubre su obra</h3>
-                    <div class="Artist-detail-works" id="artistWorks">
-                        <img src="" alt="img" class="Artist-detail-work">
-                        <img src="" alt="img" class="Artist-detail-work">
-                        <img src="" alt="img" class="Artist-detail-work">
-                    </div>
+        <section class="Carroussel">
+            <div class="Carroussel-wrapper">
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
                 </div>
-            </article>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+                <div class="Carroussel-item">
+                    <img src="" alt="Imagen de x" class="Carroussel-img">
+                </div>
+
+            </div>
+
+            <button class="Carroussel-arrow Carroussel-arrow--prev">
+                << </button>
+                    <button class="Carroussel-arrow Carroussel-arrow--next"> >> </button>
+
+                    <ul class="Carroussel-ul">
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                        <li class="Carroussel-li">
+                            <button class="Carroussel-dot"></button>
+                        </li>
+                    </ul>
+
+
         </section>
 
-
-
-        <!--Pendiente hacer lightboxes de Artist-detail-work-->
-
-
     </main>
-
+    
     <footer class="Footer">
         <div class="Footer-grid">
 
@@ -170,7 +178,6 @@
 
 
     </footer>
-
 
 </body>
 
