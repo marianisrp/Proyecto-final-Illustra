@@ -333,7 +333,7 @@ p {
 
 
 .Landing-scrollText {
-    /* background-color: var(--c-accent-primary); */
+    border-radius: var(--border-radius);
     animation: LandingScrollC 3s ease-in-out infinite;
 }
 
@@ -497,7 +497,7 @@ p {
 
 }
 
-.Grid-button {
+.Grid-a{
     background-color: var(--c-accent-primary);
     color: var(--c-bg-primary);
 
@@ -508,6 +508,11 @@ p {
     margin-bottom: 20px;
     padding: 10px 20px;
 
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
     border-radius: var(--border-radius);
     font-weight: 600;
     cursor: pointer;
@@ -516,7 +521,7 @@ p {
 
 }
 
-.Grid-button:hover{
+.Grid-a:hover{
     background-color: var(--c-accent-tertiary);
     transform: translateY(-2px);
 }
@@ -645,7 +650,7 @@ p {
     
 }
 
-.Footer-h4{
+.Footer-h2{
     color: var(--c-f-secondary);
     font-size: 0.95rem;
     font-weight: 600;
