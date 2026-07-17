@@ -979,7 +979,7 @@ p {
 .Artist-detail-a{
     color: var(--c-accent-primary);
     width: fit-content;
-    transition: all 0.3 ease ;
+    transition: all 0.3s ease ;
 
 }
 .Artist-detail-a:hover{
@@ -996,8 +996,8 @@ p {
 @media (max-width: 900px){
     .Artist-directory{
         grid-template-columns: 1fr;
-
     }
+  
 
     .Artist-list{
         position: relative;
