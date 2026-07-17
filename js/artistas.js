@@ -26,33 +26,33 @@ console.log (artistWorks)
             works: [`assets/optim/ana-jaren-work1.webp`, `assets/optim/ana-jaren-work2.webp`, `assets/optim/ana-jaren-work3.webp`]
         },
         'maria-hesse': {
-            img: `assets/optim/maria-hesse-retrato.webp`,
-            bio: `Añade aquí la biografía de María Hesse.`,
-            link: ``,
+            img: `assets/optim/maria-hesse.webp`,
+            bio: `María Hesse (1982) es una ilustradora española reconocida por su estilo poético y su universo visual lleno de sensibilidad. Ha colaborado con editoriales, revistas y marcas de prestigio, además de publicar obras como Frida Kahlo. Una biografía y una edición ilustrada de Orgullo y prejuicio. En 2020 fue seleccionada por Taschen entre las 100 mejores ilustradoras del mundo, consolidándose como una de las voces más destacadas de la ilustración contemporánea.`,
+            link: `https://www.mariahesse.es/`,
             works: []
         },
         'la-mumina': {
-            img: `assets/optim/la-mumina-retrato.webp`,
-            bio: `Añade aquí la biografía de La Mumina.`,
-            link: ``,
+            img: `assets/optim/LaMumina.webp`,
+            bio: `Laura, conocida artísticamente como Mumina, es una ilustradora argentina afincada en Sevilla. Formada en Diseño Gráfico en Buenos Aires, tras casi una década al frente de su propio bar decidió reinventarse y retomar el dibujo, una pasión que siempre la había acompañado. Su obra está inspirada en bares, bebidas y escenas de la vida cotidiana, combinando referencias a la gráfica vintage, la tipografía y la publicidad de otras épocas para crear un universo visual cálido y lleno de nostalgia. `,
+            link: `https://www.lamumina.com/`,
             works: []
         },
         'esther-gili': {
-            img: `assets/optim/esther-gili-retrato.webp`,
-            bio: `Añade aquí la biografía de Esther Gili.`,
-            link: ``,
+            img: `assets/optim/esther-gili.webp`,
+            bio: `Esther Gili (Madrid, 1981). Estudió ilustración en la Escuela de Arte no10 de Madrid. Desde entonces trabaja como ilustradora para varias editoriales y colabora regularmente con USER T38 realizando trabajos para cine y publicidad. Para Lunwerg ha publicado 39 semanas (2016) y El legado de Catherine Elliot (2018), junto a Gemma Camblor, y para Planeta Cómic ha realizado la cubierta de la antología Voces que cuentan (2021) Su técnica favorita es la acuarela y la usa siempre que puede. En sus obras solemos encontrar mujeres con carácter que nos hablan desde el silencio de papel. `,
+            link: `http://www.esthergili.com/`,
             works: []
         },
         'flavita-banana': {
-            img: `assets/optim/flavita-banana-retrato.webp`,
-            bio: `Añade aquí la biografía de Flavita Banana.`,
-            link: ``,
+            img: `assets/optim/flavita-banana.webp`,
+            bio: `Flavita Banana (Oviedo, 1987) es una ilustradora y humorista gráfica española reconocida por sus viñetas de trazo sencillo, ironía y sensibilidad. Tras formarse en la Escola Massana de Barcelona, comenzó a publicar en medios como S Moda, Mongolia y El País, donde colabora de forma habitual desde 2021. Autora de varias recopilaciones de humor gráfico, ha recibido reconocimientos como el Premio Gat Perich, el Premio Gràffica, el Premio Elgar y el Premio Mingote. Su obra combina humor, crítica social y una mirada tan cotidiana como mordaz.`,
+            link: `https://www.flavitabanana.com/`,
             works: []
         },
         'pedrita-parker': {
-            img: `assets/optim/pedrita-parker-retrato.webp`,
-            bio: `Añade aquí la biografía de Pedrita Parker.`,
-            link: ``,
+            img: `assets/optim/pedrita-parker.webp`,
+            bio: `Pedrita Parker (Estefi Martínez) es una ilustradora, escritora y emprendedora malagueña conocida por un estilo fresco, colorido y cargado de humor. A través de sus ilustraciones aborda temas como la salud mental, el universo femenino y las relaciones personales. Desde 2014 dirige su propia marca, con la que diseña productos y publica contenido creativo, además de impartir conferencias, escribir libros y exponer su obra en museos y festivales. En 2023 recibió el Premio Meridiana por su labor de divulgación y comunicación en redes sociales..`,
+            link: `https://pedritaparker.com/`,
             works: []
         }
     }
